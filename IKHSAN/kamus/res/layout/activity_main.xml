@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kamus Inggris - Indonesia - Jerman"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="12dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inggris:" />
+
+    <EditText
+        android:id="@+id/txtInggris"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan kata bahasa Inggris"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/btnTerjemah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Terjemahkan"
+        android:onClick="getTerjemahan"
+        android:layout_marginTop="12dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Indonesia:" />
+
+    <EditText
+        android:id="@+id/txtIndonesia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:focusable="false"
+        android:hint="Hasil terjemahan Indonesia" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jerman:" />
+
+    <EditText
+        android:id="@+id/txtJerman"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:focusable="false"
+        android:hint="Hasil terjemahan Jerman" />
+
+    <!-- Tombol ke Daftar Kata -->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lihat Semua Kata"
+        android:onClick="bukaDaftarKata"
+        android:layout_marginTop="20dp" />
+    <Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Tambah Kata Baru"
+    android:onClick="bukaTambahKata"
+    android:layout_marginTop="12dp" />
+
+</LinearLayout>
